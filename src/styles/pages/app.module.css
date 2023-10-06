@@ -1,0 +1,89 @@
+.menu{
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.logo{
+    background-image: url(../../img/logo.png);
+    background-size: 100%;
+    width: 10vh;
+    height: 10vh;
+}
+
+.op1{
+    width: 10vh;
+    height: 10vh;
+    background-color: coral;
+}
+
+.op2{
+    width: 10vh;
+    height: 10vh;
+    background-color: coral;
+}
+
+.op3{
+    width: 10vh;
+    height: 10vh;
+    background-color: coral;
+}
+
+.op4{
+    width: 10vh;
+    height: 10vh;
+    background-color: coral;
+}
+
+.imagem{
+    width: 100%;
+    min-height: 100vh;
+    background-color: blue;
+    margin-bottom: -100px;
+    background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,1)), url(../../img/Img-1.jpg);
+    background-size: 100%;
+}
+
+.container{
+    width: 80%;
+    min-height: 80vh;
+    background-color: green;
+    z-index: 1;
+}
+
+.anuncios{
+    width: 100%;
+    height: 80vh;
+    background-color: red;
+}
+
+.mensagens{
+    width: 100%;
+    height: 30vh;
+    background-color: red;
+}
+
+.ministerios{
+    width: 100%;
+    height: 30vh;
+    background-color: red;
+}
+
+.contatos{
+    width: 100%;
+    height: 30vh;
+    background-color: red;
+}
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    background-color: yellow;
+}
