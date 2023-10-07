@@ -1,14 +1,28 @@
-.menu{
+.navegation{
     width: 100%;
-    height: 10vh;
-    background-color: red;
+    display: flex;
+    justify-content: center;
     position: fixed;
-    top:0;
+    top:8vh;
     left:0;
+    z-index: 1;
+}
+
+.menu{
+    width: 40%;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 1;
+    border-radius: 30px;
+    background-color: #000;
+    
+}
+
+.menu h1{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
 }
 
 .logo{
@@ -16,30 +30,34 @@
     background-size: 100%;
     width: 10vh;
     height: 10vh;
+    border-radius: 50px;
+    margin-top: 6vh;
 }
 
 .op1{
     width: 10vh;
-    height: 10vh;
-    background-color: coral;
+    height: 100%;
 }
 
 .op2{
     width: 10vh;
-    height: 10vh;
-    background-color: coral;
+    height: 100%;
 }
 
 .op3{
     width: 10vh;
-    height: 10vh;
-    background-color: coral;
+    height: 100%;
 }
 
 .op4{
     width: 10vh;
-    height: 10vh;
-    background-color: coral;
+    height: 100%;
+}
+
+.separador{
+    width: 1px;
+    height: 20px;
+    background-color: white;
 }
 
 .imagem{
@@ -52,15 +70,14 @@
 }
 
 .container{
-    width: 80%;
+    width: 95%;
     min-height: 80vh;
-    background-color: green;
-    z-index: 1;
+    background-color: blueviolet;
 }
 
 .anuncios{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-color: red;
 }
 
@@ -84,6 +101,14 @@
 
 .footer{
     width: 100%;
-    height: 10vh;
-    background-color: yellow;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info{
+    width: 15%;
+    height: 40vh;
+    background-color: aquamarine;
 }
