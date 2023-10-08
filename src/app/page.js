@@ -1,6 +1,19 @@
+"use client";
 import styles from "../styles/pages/app.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function Home() {
+
+  const data = [
+    {id: 1, image: 'https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png'},
+    {id: 2, image: 'https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png'},
+    {id: 3, image: 'https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png'},
+    {id: 4, image: 'https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png'}
+  ]
+
   return (
     <>
       <div className={styles.navegation}>
@@ -25,7 +38,21 @@ export default function Home() {
       <div className={styles.imagem}/>
       <div className={styles.container}>
         <div className={styles.anuncios}>
-          <h1>Anúncios</h1>
+          <Swiper
+            slidesPerView={1}
+            pagination={{clickable: true}}
+            navigation
+          >
+            {data.map((s) => (
+              <SwiperSlide key={s.id}>
+                <img
+                  src={s.image}
+                  alt="Slider"
+                  className={styles.slideItem}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
         <div className={styles.mensagens}>
           <h1>Mensagens</h1>
