@@ -1,114 +1,157 @@
-.navegation{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top:8vh;
-    left:0;
-    z-index: 1;
+.navegation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 8vh;
+  left: 0;
+  z-index: 1;
 }
 
-.menu{
-    width: 40%;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 30px;
-    background-color: #000;
-    
+.menu {
+  width: 40%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  background-color: #000;
 }
 
-.menu h1{
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff;
+.menu h1 {
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff;
 }
 
-.logo{
-    background-image: url(../../img/logo.png);
-    background-size: 100%;
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50px;
-    margin-top: 6vh;
+.logo {
+  background-image: url(../../img/logo.png);
+  background-size: 100%;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50px;
+  margin-top: 6vh;
 }
 
-.op1{
-    width: 10vh;
+.separador {
+  width: 2px;
+  height: 20px;
+  background-color: white;
+}
+
+.imagem {
+  width: 100%;
+  min-height: 100vh;
+  background-color: blue;
+  margin-bottom: -100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1)),url(../../img/Img-1.jpg);
+  background-size: 100%;
+}
+
+.container {
+  width: 95%;
+  min-height: 80vh;
+  background-color: blueviolet;
+}
+
+.anuncios {
+  width: 100%;
+  height: 70vh;
+  background-color: red;
+}
+
+.mensagens {
+  width: 100%;
+  height: 30vh;
+  background-color: red;
+}
+
+.ministerios {
+  width: 100%;
+  height: 30vh;
+  background-color: red;
+}
+
+.contatos {
+  width: 100%;
+  height: 50vh;
+  background-color: red;
+}
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info {
+  width: 15%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13vh;
+  height: 5vh;
+  border-radius: 10rem;
+  border: 1px #fff solid;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
     height: 100%;
+    background-color: rgba(255, 0, 0, 0.4);
+    transition: all 0.5s;
+    border-radius: 10rem;
+    z-index: -1;
 }
 
-.op2{
-    width: 10vh;
-    height: 100%;
-}
-
-.op3{
-    width: 10vh;
-    height: 100%;
-}
-
-.op4{
-    width: 10vh;
-    height: 100%;
-}
-
-.separador{
-    width: 1px;
-    height: 20px;
-    background-color: white;
-}
-
-.imagem{
+.button:hover:before {
     width: 100%;
-    min-height: 100vh;
-    background-color: blue;
-    margin-bottom: -100px;
-    background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,1)), url(../../img/Img-1.jpg);
-    background-size: 100%;
 }
 
-.container{
-    width: 95%;
-    min-height: 80vh;
-    background-color: blueviolet;
+.button:hover{
+    border: 1px rgba(255, 0, 0, 0.4) solid;
 }
 
-.anuncios{
-    width: 100%;
-    height: 70vh;
-    background-color: red;
+.info li {
+  margin: 5px 0;
 }
 
-.mensagens{
-    width: 100%;
-    height: 30vh;
-    background-color: red;
+.info .imagemFooter {
+  width: 50%;
+  height: 45%;
+  background-image: url(../../img/logo.png);
+  background-size: 100%;
 }
 
-.ministerios{
-    width: 100%;
-    height: 30vh;
-    background-color: red;
+.info img {
+  width: 100%;
 }
 
-.contatos{
-    width: 100%;
-    height: 30vh;
-    background-color: red;
+.info h1 {
+  color: #fff;
 }
 
-.footer{
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.info{
-    width: 15%;
-    height: 40vh;
-    background-color: aquamarine;
+.info h2 {
+  color: gray;
 }
