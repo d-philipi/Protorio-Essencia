@@ -6,13 +6,48 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function Home() {
-
   const data = [
-    {id: 1, image: 'https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png'},
-    {id: 2, image: 'https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png'},
-    {id: 3, image: 'https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png'},
-    {id: 4, image: 'https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png'}
-  ]
+    {
+      id: 1,
+      image:
+        "https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png",
+    },
+    {
+      id: 2,
+      image:
+        "https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png",
+    },
+    {
+      id: 3,
+      image:
+        "https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png",
+    },
+    {
+      id: 4,
+      image:
+        "https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png",
+    },
+    {
+      id: 5,
+      image:
+        "https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png",
+    },
+    {
+      id: 6,
+      image:
+        "https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png",
+    },
+    {
+      id: 7,
+      image:
+        "https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png",
+    },
+    {
+      id: 8,
+      image:
+        "https://ticketgospel.com.br/wp-content/uploads/2023/09/BannerSiteTicket-Paulinia.png",
+    },
+  ];
 
   return (
     <>
@@ -35,20 +70,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.imagem}/>
+      <div className={styles.imagem} />
       <div className={styles.container}>
         <div className={styles.anuncios}>
-          <Swiper
-            slidesPerView={1}
-            pagination={{clickable: true}}
-            navigation
-          >
+          <Swiper slidesPerView={1}>
             {data.map((s) => (
               <SwiperSlide key={s.id}>
                 <img
                   src={s.image}
                   alt="Slider"
-                  className={styles.slideItem}
+                  className={styles.slideItemAnuncios}
                 />
               </SwiperSlide>
             ))}
@@ -56,6 +87,19 @@ export default function Home() {
         </div>
         <div className={styles.mensagens}>
           <h1>Mensagens</h1>
+          <div className={styles.barra}/>
+          <Swiper slidesPerView={4}>
+            {data.map((s) => (
+              <SwiperSlide key={s.id}>
+                <img
+                  src={s.image}
+                  alt="Slider"
+                  className={styles.slideItemMensagens}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className={styles.barra}/>
         </div>
         <div className={styles.ministerios}>
           <h1>Ministérios</h1>
@@ -66,7 +110,7 @@ export default function Home() {
       </div>
       <div className={styles.footer}>
         <ul className={styles.info}>
-          <div className={styles.imagemFooter}/>
+          <div className={styles.imagemFooter} />
         </ul>
         <ul className={styles.info}>
           <li>
@@ -111,9 +155,7 @@ export default function Home() {
             <h1>QrCode para Pix</h1>
           </li>
         </ul>
-        <ul className={styles.info}>
-          
-        </ul>
+        <ul className={styles.info}></ul>
       </div>
     </>
   );
