@@ -103,9 +103,24 @@ export default function Home() {
         </div>
         <div className={styles.ministerios}>
           <h1>Ministérios</h1>
+          <div className={styles.ministerioscontainer}>
+            <div className={styles.ministerio}></div>
+            <div className={styles.ministerio}></div>
+            <div className={styles.ministerio}></div>
+          </div>
+          <div className={styles.ministerioscontainer}>
+            <div className={styles.ministerio}></div>
+            <div className={styles.ministerio}></div>
+            <div className={styles.ministerio}></div>
+          </div>
         </div>
-        <div className={styles.contatos}>
-          <h1>Contatos</h1>
+        <div className={styles.information}>
+          <div className={styles.comunhao}>
+            <h1>Comunhão</h1>  
+          </div>
+          <div className={styles.contatos}>
+            <h1>Contatos</h1>
+          </div>
         </div>
       </div>
       <div className={styles.footer}>
