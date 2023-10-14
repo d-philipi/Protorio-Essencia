@@ -43,11 +43,11 @@
 .imagem {
   width: 100%;
   min-height: 100vh;
-  background-color: blue;
   margin-bottom: -50px;
   background-image: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1)),
     url(../../img/Img-1.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -88,6 +88,7 @@
 .slideItemMensagens {
   width: 50vh;
   height: 25vh;
+  border-radius: 10px;
   object-fit: cover;
   z-index: -1;
 }
@@ -148,6 +149,25 @@
 .comunhao{
   width: 50%;
   height: 60vh;
+}
+
+.comu1{
+  width: 100%;
+  height: 20vh;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgba(100, 100, 100, 0.5);
+  font-weight: bold;
+}
+
+.comu1 :first-child{
+  font-size: 23px;
+  font-style: italic;
+  margin: 10px 0;
 }
 
 .contatos{
@@ -223,6 +243,7 @@
   height: 45%;
   background-image: url(../../img/logo.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .info img {

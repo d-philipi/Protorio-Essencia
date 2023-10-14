@@ -116,7 +116,15 @@ export default function Home() {
         </div>
         <div className={styles.information}>
           <div className={styles.comunhao}>
-            <h1>Comunhão</h1>  
+            <h1>Comunhão</h1>
+            <div className={styles.comu1}>
+              <p>
+                "Porque onde estiverem dois ou três reunidos em meu nome, aí estou eu no meio deles."
+              </p>
+              <p>
+                Mateus 18:20
+              </p>
+            </div>
           </div>
           <div className={styles.contatos}>
             <h1>Contatos</h1>
