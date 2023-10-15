@@ -51,6 +51,7 @@ export default function Home() {
 
   return (
     <>
+      <div className={styles.navegationmobile}/>
       <div className={styles.navegation}>
         <div className={styles.menu}>
           <div className={styles.op1}>
@@ -60,7 +61,7 @@ export default function Home() {
           <div className={styles.op2}>
             <h1>Sobre</h1>
           </div>
-          <div className={styles.logo}></div>
+          <div className={styles.logo}/>
           <div className={styles.op3}>
             <h1>Doação</h1>
           </div>

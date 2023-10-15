@@ -8,6 +8,21 @@
   z-index: 2;
 }
 
+.navegationmobile{
+  width: 10vh;
+  height: 10vh;
+  background-image: url(../../img/logo.png);
+  background-color: #000;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  display: none;
+}
+
 .menu {
   width: 40%;
   height: 7vh;
@@ -27,7 +42,9 @@
 
 .logo {
   background-image: url(../../img/logo.png);
+  background-color: #000;
   background-size: 100%;
+  background-repeat: no-repeat;
   width: 10vh;
   height: 10vh;
   border-radius: 50px;
@@ -271,8 +288,8 @@
 }
 
 .info .imagemFooter {
-  width: 50%;
-  height: 45%;
+  width: 20vh;
+  height: 20vh;
   background-image: url(../../img/logo.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -288,4 +305,65 @@
 
 .info h2 {
   color: gray;
+}
+
+@media (max-width: 1200px){
+  .imagem{
+    min-height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1)),
+    url(../../img/Img-1.jpg);
+  }
+}
+
+@media (max-width: 1000px){
+  .imagem{
+    min-height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1)),
+    url(../../img/Img-1.jpg);
+  }
+  .navegation{
+    display: none;
+  }
+  .navegationmobile{
+    display: inherit;
+  }
+}
+
+@media (max-width:600px){
+  .imagem{
+    min-height: 20vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)),
+    url(../../img/Img-1.jpg);
+  }
+  .navegationmobile{
+    width: 7vh;
+    height: 7vh;
+  }
+  .anuncios{
+    width: 100%;
+    height: 60vh;
+    margin: 10%;
+  }
+  .ministerios{
+    height: 100%;
+  }
+  .ministerio{
+    width: 25vh;
+    height: 30vh;
+  }
+  .information{
+    height: 100%;
+    padding: 15px 30px;
+    display: block;
+  }
+  .comunhao{
+    width: 100%;
+  }
+  .contatos{
+    width: 100%;
+  }
+  .info .imagemFooter {
+    width: 10vh;
+    height: 10vh;
+  }
 }
