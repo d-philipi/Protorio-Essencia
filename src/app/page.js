@@ -73,7 +73,9 @@ export default function Home() {
       <div className={styles.imagem} />
       <div className={styles.container}>
         <div className={styles.anuncios}>
-          <Swiper slidesPerView={1}>
+          <Swiper 
+          slidesPerView={1}
+          >
             {data.map((s) => (
               <SwiperSlide key={s.id}>
                 <img
@@ -86,7 +88,7 @@ export default function Home() {
           </Swiper>
         </div>
         <div className={styles.mensagens}>
-          <h1>Mensagens</h1>
+          <h1>MENSAGENS</h1>
           <div className={styles.barra}/>
           <Swiper slidesPerView={4}>
             {data.map((s) => (
@@ -102,7 +104,7 @@ export default function Home() {
           <div className={styles.barra}/>
         </div>
         <div className={styles.ministerios}>
-          <h1>Ministérios</h1>
+          <h1>MINISTÉRIOS</h1>
           <div className={styles.ministerioscontainer}>
             <div className={styles.ministerio}></div>
             <div className={styles.ministerio}></div>
@@ -116,7 +118,7 @@ export default function Home() {
         </div>
         <div className={styles.information}>
           <div className={styles.comunhao}>
-            <h1>Comunhão</h1>
+            <h1>COMUNHÃO</h1>
             <div className={styles.comu1}>
               <p>
                 "Porque onde estiverem dois ou três reunidos em meu nome, aí estou eu no meio deles."
@@ -125,9 +127,19 @@ export default function Home() {
                 Mateus 18:20
               </p>
             </div>
+            <div className={styles.comu2}>
+              <div>
+                <div className={styles.bairrobar}/>
+                <h1>CASCADURA</h1>
+              </div>
+              <div>
+                <div className={styles.ruabar}/>
+                <p>Rua Barão do Bananal, 306 <br/> Rio de Janeiro</p>
+              </div>
+            </div>
           </div>
           <div className={styles.contatos}>
-            <h1>Contatos</h1>
+            <h1>CONTATOS</h1>
           </div>
         </div>
       </div>
