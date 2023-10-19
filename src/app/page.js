@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import {AiOutlineMenu} from "react-icons/ai";
+
 export default function Home() {
   const data = [
     {
@@ -51,7 +53,10 @@ export default function Home() {
 
   return (
     <>
-      <div className={styles.navegationmobile}/>
+      <div className={styles.navegationmobile}>
+        <div className={styles.imagemmobile}/>
+        <AiOutlineMenu className={styles.menuhamburguer}/>
+      </div>
       <div className={styles.navegation}>
         <div className={styles.menu}>
           <div className={styles.op1}>
@@ -61,7 +66,7 @@ export default function Home() {
           <div className={styles.op2}>
             <h1>Sobre</h1>
           </div>
-          <div className={styles.logo}/>
+          <div className={styles.logo} />
           <div className={styles.op3}>
             <h1>Doação</h1>
           </div>
@@ -74,9 +79,7 @@ export default function Home() {
       <div className={styles.imagem} />
       <div className={styles.container}>
         <div className={styles.anuncios}>
-          <Swiper 
-          slidesPerView={1}
-          >
+          <Swiper slidesPerView={1}>
             {data.map((s) => (
               <SwiperSlide key={s.id}>
                 <img
@@ -90,7 +93,7 @@ export default function Home() {
         </div>
         <div className={styles.mensagens}>
           <h1>MENSAGENS</h1>
-          <div className={styles.barra}/>
+          <div className={styles.barra} />
           <Swiper slidesPerView={4}>
             {data.map((s) => (
               <SwiperSlide key={s.id}>
@@ -102,7 +105,7 @@ export default function Home() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className={styles.barra}/>
+          <div className={styles.barra} />
         </div>
         <div className={styles.ministerios}>
           <h1>MINISTÉRIOS</h1>
@@ -122,20 +125,21 @@ export default function Home() {
             <h1>COMUNHÃO</h1>
             <div className={styles.comu1}>
               <p>
-                "Porque onde estiverem dois ou três reunidos em meu nome, aí estou eu no meio deles."
+                "Porque onde estiverem dois ou três reunidos em meu nome, aí
+                estou eu no meio deles."
               </p>
-              <p>
-                Mateus 18:20
-              </p>
+              <p>Mateus 18:20</p>
             </div>
             <div className={styles.comu2}>
               <div>
-                <div className={styles.bairrobar}/>
+                <div className={styles.bairrobar} />
                 <h1>CASCADURA</h1>
               </div>
               <div>
-                <div className={styles.ruabar}/>
-                <p>Rua Barão do Bananal, 306 <br/> Rio de Janeiro</p>
+                <div className={styles.ruabar} />
+                <p>
+                  Rua Barão do Bananal, 306 <br /> Rio de Janeiro
+                </p>
               </div>
             </div>
           </div>
