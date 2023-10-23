@@ -1,5 +1,8 @@
+"use client";
+
 import styles from "../../styles/pages/app.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 export default function Container() {
   const data = [
